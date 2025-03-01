@@ -73,7 +73,6 @@
       right: auto !important;
       margin: 0;
       border-radius: 15px; /* Rounded corners */
-      /* Transition for fade & slide animation on open and close */
       transition: transform 0.3s ease-out, opacity 0.3s ease-out;
       transform: translateY(-20px);
       opacity: 0;
@@ -178,28 +177,24 @@
     </div>
   </section>
   
-  <!-- Ausbildung Section -->
+  <!-- Ausbildung Section (no offcanvas for these entries) -->
   <section id="ausbildung" class="py-5" style="background-color: #f8f9fa;">
     <div class="container">
       <h2 class="text-center section-heading">Ausbildung</h2>
       <!-- Ausbildung Entry 1 -->
-      <a class="card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAusbildung1" role="button">
-        <div class="card p-3">
-          <div>
-            <h5 class="card-title">Universität Bielefeld</h5>
-            <p class="card-text">Bachelor of Arts in den Fächern Sozialwissenschaften und Wirtschaftswissenschaften</p>
-          </div>
+      <div class="card p-3">
+        <div>
+          <h5 class="card-title">Universität Bielefeld</h5>
+          <p class="card-text">2019-2025 - Bachelor of Arts in den Fächern Sozialwissenschaften und Wirtschaftswissenschaften</p>
         </div>
-      </a>
+      </div>
       <!-- Ausbildung Entry 2 -->
-      <a class="card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAusbildung2" role="button">
-        <div class="card p-3">
-          <div>
-            <h5 class="card-title">Freiherr-vom-Stein Gymnasium</h5>
-            <p class="card-text">Abschluss mit der Allgemeinen Hochschulreife</p>
-          </div>
+      <div class="card p-3">
+        <div>
+          <h5 class="card-title">Freiherr-vom-Stein Gymnasium</h5>
+          <p class="card-text">2011-2019 - Abschluss mit der Allgemeinen Hochschulreife</p>
         </div>
-      </a>
+      </div>
     </div>
   </section>
   
@@ -248,55 +243,75 @@
     </div>
   </section>
   
-  <!-- Offcanvas Panels for each Card -->
+  <!-- Offcanvas Panels for Arbeit and Blog Only -->
   
-  <!-- Offcanvas for Arbeit Entry 1: Universität Bielefeld - IKG -->
+  <!-- Offcanvas for Arbeit Entry 1: Universität Bielefeld - IKG (with banner, no title) -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasArbeit1" aria-labelledby="offcanvasArbeit1Label">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasArbeit1Label">Universität Bielefeld - IKG</h5>
+      <!-- Title removed as per request -->
     </div>
     <div class="offcanvas-body">
-      <p>01.01.2024 - 31.03.2025 - Verantwortlich für den erste Kontakt von Support Anfragen der Mitarbeitenden der Fakultät Soziologie. Hilfe bei Administration, sowie Aufgaben der IT-Ausstattung. Erarbeitung von Lösungen im Team.</p>
+      <!-- Banner image -->
+      <img src="images/uni_job_banner.png" alt="Universität Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
+      <!-- Two-column layout: left text (55%), right PDF (45%) -->
+      <div style="display: flex; height: calc(100% - 300px);">
+        <!-- Left column (55%) -->
+        <div style="flex: 0 0 55%; padding-right: 1rem;">
+          <p>In der Zeit vom 01.01.2024 bis zum 31.03.2025 war ich als studentische Hilfskraft im IT-Support der Fakultät Soziologie tätig. Mit einer wöchentlichen Arbeitszeit von 9,5 Stunden war ich der erste Ansprechpartner für Supportanfragen der Mitarbeitenden und sorgte dafür, dass der reibungslose IT-Betrieb stets gewährleistet war.</p>
+          <p>Meine Aufgaben reichten von der Bedarfsermittlung und Verwaltung von IT-Ressourcen über die individuelle Beratung der Fakultätsmitglieder bis hin zur Betreuung von rund 400 Arbeitsplätzen. Dabei war ich verantwortlich für die Systemadministration von Clients und Servern, die technische Betreuung von Projekten sowie die Organisation und Durchführung von Veranstaltungen – sowohl vor Ort als auch digital. Ein weiterer Schwerpunkt meiner Tätigkeit lag in der Betreuung des selbst gehosteten Befragungstools Limesurvey, wo ich Umfragen erstellte und betreute.</p>
+          <p>Darüber hinaus entwickelte ich praxisnahe Arbeitslösungen, leistete umfassende Anwenderberatung, dokumentierte alle relevanten Prozesse und kümmerte mich um die Reparatur von Soft- und Hardware sowie die Netzwerkadministration. Diese vielfältigen Aufgaben haben es mir ermöglicht, mein IT-Fachwissen in einem dynamischen Umfeld kontinuierlich zu erweitern und zu vertiefen.</p>
+        </div>
+        <!-- Right column (45%): PDF viewer -->
+        <div style="flex: 0 0 45%; overflow-y: auto; border: 1px solid #ccc; padding: 0.5rem;">
+          <embed src="pdf/Zwischenzeugnis_IT_Soziologie.pdf" type="application/pdf" style="width: 100%; height: 100%;" />
+        </div>
+      </div>
     </div>
   </div>
   
-  <!-- Offcanvas for Arbeit Entry 2: Bielefelder Hohlträgerfabrik GmbH -->
+  <!-- Offcanvas for Arbeit Entry 2: Bielefelder Hohlträgerfabrik GmbH (with banner, no title) -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasArbeit2" aria-labelledby="offcanvasArbeit2Label">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasArbeit2Label">Bielefelder Hohlträgerfabrik GmbH</h5>
+      <!-- Title removed as per request -->
     </div>
     <div class="offcanvas-body">
-      <p>28.08.2020–20.04.2023 - Die Bielefelder Hohlträger GmbH war mein erster Arbeitgeber. Zu dem Job kam ich durch Empfehlungen im Umkreis der Familie. Zuerst arbeitet ich zwischen dem Abschluss des Abiturs und dem Anfang meines Studiums und half bei alltäglichen Aufgaben. In 2020 trat ich dem Unternehmen wieder bei und kümmerte mich um vor allem um die Pflege der Stammdaten in Microsoft Dynamics NAV. Dafür erfasste ich Daten und archivierte diese, des Weiteren erstellte ich Auswertungen und nahm an diverse kaufmännischen Tätigkeiten teil.</p>
+      <!-- Banner image placeholder -->
+      <img src="images/Bielefelder_Hohlträger_banner.png" alt="Bielefelder Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
+      <!-- Two-column layout: left text (55%), right PDF (45%) -->
+      <div style="display: flex; height: calc(100% - 300px);">
+        <!-- Left column with original text (55%) -->
+        <div style="flex: 0 0 55%; padding-right: 1rem;">
+          <p>Zwischen dem 28.08.2020 und dem 20.04.2023 war ich bei der Bielefelder Hohlträger GmbH – meinem ersten Arbeitgeber – als Minijobber tätig. Durch eine Empfehlung aus dem familiären Umfeld kam ich in das Unternehmen, wo ich zunächst zwischen meinem Abiturabschluss und dem Beginn meines Studiums alltägliche Aufgaben übernahm und erste praktische Erfahrungen sammelte.</p>
+          <p>Im Jahr 2020 kehrte ich zurück und konzentrierte mich vor allem auf die Pflege der Stammdaten in Microsoft Dynamics NAV. Hierbei erfasste und archivierte ich Daten, erstellte aussagekräftige Auswertungen und war zudem in diverse kaufmännische Tätigkeiten eingebunden. Diese Aufgaben ermöglichten es mir, einen umfassenden Einblick in betriebliche Abläufe zu gewinnen und meine Fähigkeiten im Umgang mit modernen IT-Systemen und Datenmanagement weiter auszubauen.</p>
+        </div>
+        <!-- Right column (45%): PDF viewer -->
+        <div style="flex: 0 0 45%; overflow-y: auto; border: 1px solid #ccc; padding: 0.5rem;">
+          <embed src="pdf/Zeugnis_Bielefelder_Hohlträgerfabrik.pdf" type="application/pdf" style="width: 100%; height: 100%;" />
+        </div>
+      </div>
     </div>
   </div>
   
-  <!-- Offcanvas for Arbeit Entry 3: Kenstone Metal Company GmbH -->
+  <!-- Offcanvas for Arbeit Entry 3: Kenstone Metal Company GmbH (with banner, no title) -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasArbeit3" aria-labelledby="offcanvasArbeit3Label">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasArbeit3Label">Kenstone Metal Company GmbH</h5>
+      <!-- Title removed as per request -->
     </div>
     <div class="offcanvas-body">
-      <p>08.11.2021 - 30.09.2022 - Meine Tätigkeit bei Kenstone Metal Company GmbH began mit einem Pflichtpraktikum, welches ich zum Abschluss meines Bachelors benötigte. Der Anfang meines Praktikums verlief chaotisch, doch konnte ich zum Ende viel Erfahrung sammeln. Das Unternehmen war mit mir zufrieden und so wurde mir ein weiterer Job in der gleichen Position wie mein Praktikum angeboten. Ich betreute das Zeiterfassungssystem, sowie die Prüfung und Aktualisierung der Personalstammdaten und Konten. Ebenfalls unterstützte ich den Produktionsleiter bei Produktionsplanungsprozessen.</p>
-    </div>
-  </div>
-  
-  <!-- Offcanvas for Ausbildung Entry 1: Universität Bielefeld -->
-  <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasAusbildung1" aria-labelledby="offcanvasAusbildung1Label">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasAusbildung1Label">Universität Bielefeld</h5>
-    </div>
-    <div class="offcanvas-body">
-      <p>2019-2025 - Den Bachelor of Art erreichte ich in der Kombination Sozialwissenschaften und Wirtschaftswissenschaften. Den Schwerpunkt in Wirtschaftswissenschaften legte ich in Human Ressources</p>
-    </div>
-  </div>
-  
-  <!-- Offcanvas for Ausbildung Entry 2: Freiherr-vom-Stein Gymnasium -->
-  <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasAusbildung2" aria-labelledby="offcanvasAusbildung2Label">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasAusbildung2Label">Freiherr-vom-Stein Gymnasium</h5>
-    </div>
-    <div class="offcanvas-body">
-      <p>2011-2019 - Das Abitur erreichte ich am Freiherr-vom-Stein Gymnasium nach 8 Jahren und belegte in der Oberstufe die Leistungskurse Mathematik und Geschichte.</p>
+      <!-- Banner image placeholder -->
+      <img src="images/Kenstone_banner.png" alt="Kenstone Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
+      <!-- Two-column layout: left text (55%), right PDF (45%) -->
+      <div style="display: flex; height: calc(100% - 300px);">
+        <!-- Left column with original text (55%) -->
+        <div style="flex: 0 0 55%; padding-right: 1rem;">
+          <p>Zwischen dem 08.11.2021 und dem 30.09.2022 begann meine Tätigkeit bei der Kenstone Metal Company GmbH mit einem Pflichtpraktikum, das ich für den Abschluss meines Bachelors absolvieren musste. Obwohl der Start meines Praktikums zunächst etwas chaotisch verlief, konnte ich bis zum Ende wertvolle Erfahrungen sammeln. Aufgrund meiner engagierten Arbeit wurde mir anschließend ein weiterer Job in derselben Position angeboten.</p>
+          <p>In dieser Rolle war ich hauptsächlich für die Datenpflege im Zeiterfassungssystem zuständig. Zu meinen Aufgaben gehörte es, die Personalstammdaten und Konten regelmäßig zu prüfen und zu aktualisieren sowie eine Bedarfsanalyse durchzuführen, um bei Bedarf Erweiterungen im Zeiterfassungssystem umzusetzen. Darüber hinaus unterstützte ich den Produktionsleiter tatkräftig bei der Personal- und Kapazitätsplanung im Produktionsplanungsprozess.</p>
+        </div>
+        <!-- Right column (45%): PDF viewer -->
+        <div style="flex: 0 0 45%; overflow-y: auto; border: 1px solid #ccc; padding: 0.5rem;">
+          <embed src="pdf/Praktikumszeugnis_Kenstone.pdf" type="application/pdf" style="width: 100%; height: 100%;" />
+        </div>
+      </div>
     </div>
   </div>
   
@@ -306,10 +321,22 @@
       <h5 class="offcanvas-title" id="offcanvasBlog1Label">Erstellen einer persönlichen Website</h5>
     </div>
     <div class="offcanvas-body">
-      <p>Da ich nach dem Bachelorabschluss auf der Suche nach einem Job bin, bot es sich an eine eigene Website zu erstellen. Doch besitze ich keine Kenntnisse in Webentwicklungen und den dort vorherrschenden Programmiersprachen. So entschied ich mich dieses Projekt mit KI umzusetzen. Die Inspiration kam aber auch durch zwei Youtube Videos (unten verlinkt). Das Projekt ist diese Website auf der ihr gerade seid.</p>
+      <b>KI-Modell</b>
+      <p>Als Modell wurde hauptsächlich ChatGPT o3-mini-high genommen. Dieses Modell ist zum Zeitpunkt der Erstellung der Website das beste Reasoning-Modell von OpenAI, welches gut für komplexe Probleme geeignet ist. OpenAI bezeichnet den Zweck von o3-mini-high als "Ideal zum Programmieren und für logische Aufgaben". Für dieses Modell muss man zunächst nichts zahlen; in meiner Anfrage hatte ich zwischen 5 und 7 Fragen Zeit, bis ich für ein paar Stunden meinen Zugang verlor. Wenn ab und zu ein bis zwei Funktionen hinzugefügt werden sollen, mag das reichen – arbeitet man allerdings länger an einem Projekt, funktioniert diese Option nur schwer. So entschied ich mich, 20$ im Monat für ChatGPT Plus zu bezahlen, und bin zu diesem Zeitpunkt sehr zufrieden. Ich erreichte keine Grenzen und konnte so meinen Gedanken und Inputs freien Lauf lassen.<p>
+        
+      <b>Ablauf der Erstellung der Website</b>
+      <p>Der Ablauf der Erstellung von Bereichen und Funktionen verlief immer gleich. Wenn ich eine Idee bekam, gab ich meinen Input in ChatGPT ein, und entweder gab es mir das Ergebnis, das ich wollte, oder ich musste in mehreren Konversationen meine Idee näher erläutern, bis meine Vision erreicht war. Doch ich bin auch kein Prompt Engineer – also jemand, der guten Input liefert, um so gute Ergebnisse zu erzielen. Denn das Ergebnis jeder KI ist nur so gut wie der Input. Da ich mit dem Output von ChatGPT meist zufrieden war, legte ich meinen Fokus nicht auf das Prompt Engineering. In dem verlinkten Video von "The Morpheus" erläutert dieser seinen Prompt. Ich übernahm Teile wie das Stellen von Fragen oder dass er den gesamten Code zurückgeben sollte (sonst tat die KI das nicht immer). Die Fragen halfen mir und der KI dabei, schneller ein gutes Ergebnis zu erzielen. Eine meiner ersten Anfragen war:
+        "I am creating a profile website for me. The goal is to show my work station and education as well as projects I am working on. Now I want a colour scheme that is suitable for the IT sector on my page, as well as sections under 'Arbeit' and 'Education' to show my work (Arbeit) / education (Ausbildung) stations. I need 3 Arbeit and 2 Ausbildung sections, each with a picture for a logo of the company. Also, I want to have cards to portray my projects under 'blog'. If you have questions, feel free to ask.
+        --Code--
+        [Hier war der Input meines bisherigen Codes]"<p>
+      <p>Sicherlich ist aufgefallen, dass der Textinput Englisch ist. Das liegt am Training der KI. Die KI wurde in Amerika mit überwiegend englischem Input trainiert und "versteht" so besser Englisch. Selbstverständlich kann auch auf Deutsch mit ihr gearbeitet werden, doch soll die Arbeit in Englisch die Qualität erhöhen. Jedenfalls umfasste die Antwort von ChatGPT sieben Fragen – darunter zum Beispiel: "For the 3 Arbeit and 2 Ausbildung sections, do you envision each as a separate card or container with the company logo and details?" Daran hatte ich gar nicht gedacht. Ich hatte zwar eine Vorstellung, doch hatte ich dies der KI nicht mitgeteilt. Woher soll sie es also wissen? Eine von vielen Gelegenheiten, bei denen mir die Fragen halfen, Zeit zu sparen und das Ergebnis zu verbessern.<p>
+      <p>Doch ganz ohne menschliches Eingreifen habe ich die Website nicht erstellt. Die Texte, unter anderem auch dieser hier, habe ich meist selbst geschrieben. Die KI half dann bei der Verbesserung der Satzstruktur, Rechtschreibung und Grammatik. Auch habe ich die Bilder und PDFs selbst eingefügt. Die Stellen, an denen sie eingefügt wurden, habe ich erstellen lassen und dann den Content per Strg+V oder über die Ordnerstruktur (z.B. images/uni_job_banner.png) eingefügt.<p>
+      <b>Probleme</b>
+      <p>Unlösbare Probleme gab es bisher keine. Funktionierte auf einmal etwas nicht mehr, sagte ich der KI das, und sie fixte es, auch wenn es manchmal mehrere Versuche dauerte. Manchmal zerstörte die KI kurzfristig einige Teile der Website, doch mit einem Hinweis lief alles wieder flüssig. Gelegentlich schaute ich selbst in den Code, falls die KI es nach zwei Versuchen nicht hinbekam. Doch geändert hat das meistens nicht; beim dritten oder vierten Mal schaffte es die KI, den Fehler zu beheben, und das Ergebnis war perfekt.</p>
+      <b>Youtube Links</b>
       <div class="mt-3">
-        <a href="https://www.youtube.com/watch?v=EXfFBEuCAr0" target="_blank" class="d-block">YouTube Video 1</a>
-        <a href="https://www.youtube.com/watch?v=bCfPm8inzSQ" target="_blank" class="d-block">YouTube Video 2</a>
+        <a href="https://www.youtube.com/watch?v=EXfFBEuCAr0" target="_blank" class="d-block">Website Video von NetworkChuck</a>
+        <a href="https://www.youtube.com/watch?v=bCfPm8inzSQ" target="_blank" class="d-block">KI Video von TheMorpheus</a>
       </div>
     </div>
   </div>
