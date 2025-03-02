@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Florian Eiskamp Profile</title>
+  <title data-de="Florian Eiskamp Profile" data-en="Florian Eiskamp Profile" class="translatable">Florian Eiskamp Profile</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -108,7 +108,7 @@
   <!-- Responsive Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Florian Eiskamp</a>
+      <a class="navbar-brand translatable" href="#" data-de="Florian Eiskamp" data-en="Florian Eiskamp">Florian Eiskamp</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
               aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -116,15 +116,19 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <!-- Center links -->
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link" href="#start">Start</a></li>
-          <li class="nav-item"><a class="nav-link" href="#arbeit">Arbeit</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ausbildung">Ausbildung</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link translatable" href="#start" data-de="Start" data-en="Home">Start</a></li>
+          <li class="nav-item"><a class="nav-link translatable" href="#arbeit" data-de="Arbeit" data-en="Work">Arbeit</a></li>
+          <li class="nav-item"><a class="nav-link translatable" href="#ausbildung" data-de="Ausbildung" data-en="Education">Ausbildung</a></li>
+          <li class="nav-item"><a class="nav-link translatable" href="#blog" data-de="Blog" data-en="Blog">Blog</a></li>
         </ul>
         <!-- Social icons on the right -->
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/florian-eiskamp/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
           <li class="nav-item"><a class="nav-link" href="https://www.xing.com/profile/Florian_Eiskamp/" target="_blank"><i class="fab fa-xing fa-2x"></i></a></li>
+          <!-- Language Toggle Button -->
+          <li class="nav-item">
+            <button id="langToggle" class="btn btn-outline-secondary">EN</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -133,12 +137,12 @@
   <!-- Start Section -->
   <section id="start" class="py-5" style="background-color: #f8f9fa;">
     <div class="container">
-      <h2 class="text-center section-heading">Start</h2>
-      <p class="text-center">Wilkommen auf meiner Website!</p>
+      <h2 class="text-center section-heading translatable" data-de="Start" data-en="Home">Start</h2>
+      <p class="text-center translatable" data-de="Wilkommen auf meiner Website!" data-en="Welcome to my website!">Wilkommen auf meiner Website!</p>
       <!-- Construction Banner -->
       <div class="construction-banner">
         <i class="fas fa-exclamation-triangle fa-lg"></i>
-        <span>Diese Website befindet sich aktuell noch im Aufbau!</span>
+        <span class="translatable" data-de="Diese Website befindet sich aktuell noch im Aufbau!" data-en="This website is currently under construction!">Diese Website befindet sich aktuell noch im Aufbau!</span>
       </div>
     </div>
   </section>
@@ -146,13 +150,13 @@
   <!-- Arbeit Section -->
   <section id="arbeit" class="py-5" style="background-color: #ffffff;">
     <div class="container">
-      <h2 class="text-center section-heading">Arbeit</h2>
+      <h2 class="text-center section-heading translatable" data-de="Arbeit" data-en="Work">Arbeit</h2>
       <!-- Arbeit Entry 1 -->
       <a class="card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasArbeit1" role="button">
         <div class="card p-3">
           <div>
-            <h5 class="card-title">Universität Bielefeld - IKG</h5>
-            <p class="card-text">Studentische Hilfskraft im First Level IT-Support</p>
+            <h5 class="card-title translatable" data-de="Universität Bielefeld - IKG" data-en="University of Bielefeld - IKG">Universität Bielefeld - IKG</h5>
+            <p class="card-text translatable" data-de="Studentische Hilfskraft im First Level IT-Support" data-en="Student assistant in first-level IT support">Studentische Hilfskraft im First Level IT-Support</p>
           </div>
         </div>
       </a>
@@ -160,8 +164,8 @@
       <a class="card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasArbeit2" role="button">
         <div class="card p-3">
           <div>
-            <h5 class="card-title">Bielefelder Hohlträgerfabrik GmbH</h5>
-            <p class="card-text">Datenmanagement</p>
+            <h5 class="card-title translatable" data-de="Bielefelder Hohlträgerfabrik GmbH" data-en="Bielefelder Hohlträgerfabrik GmbH">Bielefelder Hohlträgerfabrik GmbH</h5>
+            <p class="card-text translatable" data-de="Datenmanagement" data-en="Data management">Datenmanagement</p>
           </div>
         </div>
       </a>
@@ -169,30 +173,30 @@
       <a class="card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasArbeit3" role="button">
         <div class="card p-3">
           <div>
-            <h5 class="card-title">Kenstone Metal Company GmbH</h5>
-            <p class="card-text">Personalsachbearbeiter und Datenmanagement</p>
+            <h5 class="card-title translatable" data-de="Kenstone Metal Company GmbH" data-en="Kenstone Metal Company GmbH">Kenstone Metal Company GmbH</h5>
+            <p class="card-text translatable" data-de="Personalsachbearbeiter und Datenmanagement" data-en="Personnel clerk and data management">Personalsachbearbeiter und Datenmanagement</p>
           </div>
         </div>
       </a>
     </div>
   </section>
   
-  <!-- Ausbildung Section (no offcanvas for these entries) -->
+  <!-- Ausbildung Section -->
   <section id="ausbildung" class="py-5" style="background-color: #f8f9fa;">
     <div class="container">
-      <h2 class="text-center section-heading">Ausbildung</h2>
+      <h2 class="text-center section-heading translatable" data-de="Ausbildung" data-en="Education">Ausbildung</h2>
       <!-- Ausbildung Entry 1 -->
       <div class="card p-3">
         <div>
-          <h5 class="card-title">Universität Bielefeld</h5>
-          <p class="card-text">2019-2025 - Bachelor of Arts in den Fächern Sozialwissenschaften und Wirtschaftswissenschaften</p>
+          <h5 class="card-title translatable" data-de="Universität Bielefeld" data-en="University of Bielefeld">Universität Bielefeld</h5>
+          <p class="card-text translatable" data-de="2019-2025 - Bachelor of Arts in den Fächern Sozialwissenschaften und Wirtschaftswissenschaften" data-en="2019-2025 - Bachelor of Arts in Social Sciences and Economics">2019-2025 - Bachelor of Arts in den Fächern Sozialwissenschaften und Wirtschaftswissenschaften</p>
         </div>
       </div>
       <!-- Ausbildung Entry 2 -->
       <div class="card p-3">
         <div>
-          <h5 class="card-title">Freiherr-vom-Stein Gymnasium</h5>
-          <p class="card-text">2011-2019 - Abschluss mit der Allgemeinen Hochschulreife</p>
+          <h5 class="card-title translatable" data-de="Freiherr-vom-Stein Gymnasium" data-en="Freiherr-vom-Stein High School">Freiherr-vom-Stein Gymnasium</h5>
+          <p class="card-text translatable" data-de="2011-2019 - Abschluss mit der Allgemeinen Hochschulreife" data-en="2011-2019 - Graduated with the general university entrance qualification">2011-2019 - Abschluss mit der Allgemeinen Hochschulreife</p>
         </div>
       </div>
     </div>
@@ -201,16 +205,16 @@
   <!-- Blog Section -->
   <section id="blog" class="py-5" style="background-color: #ffffff;">
     <div class="container">
-      <h2 class="text-center section-heading">Blog</h2>
+      <h2 class="text-center section-heading translatable" data-de="Blog" data-en="Blog">Blog</h2>
       <div class="row">
         <!-- Project Card 1 -->
         <div class="col-md-4 mb-4">
           <a class="card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBlog1" role="button">
             <div class="card blog-card">
-              <img src="images/website_icon.png" class="card-img-top" alt="Project Image">
+              <img src="images/website_icon.png" class="card-img-top" alt="Project Image" data-de="Projektbild" data-en="Project Image">
               <div class="card-body">
-                <h5 class="card-title">Erstellen einer persönlichen Website</h5>
-                <p class="card-text">Mit Hilfe von Bootstrap und ein wenig KI erstelle ich meine erste Website.</p>
+                <h5 class="card-title translatable" data-de="Erstellen einer persönlichen Website" data-en="Creating a Personal Website">Erstellen einer persönlichen Website</h5>
+                <p class="card-text translatable" data-de="Mit Hilfe von Bootstrap und ein wenig KI erstelle ich meine erste Website." data-en="With the help of Bootstrap and a bit of AI, I am creating my first website.">Mit Hilfe von Bootstrap und ein wenig KI erstelle ich meine erste Website.</p>
               </div>
             </div>
           </a>
@@ -219,10 +223,10 @@
         <div class="col-md-4 mb-4">
           <a class="card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBlog2" role="button">
             <div class="card blog-card">
-              <img src="images/server-icon.png" class="card-img-top" alt="Project Image">
+              <img src="images/server-icon.png" class="card-img-top" alt="Project Image" data-de="Projektbild" data-en="Project Image">
               <div class="card-body">
-                <h5 class="card-title">Homeserver</h5>
-                <p class="card-text">Angetrieben vom Rasberrypi 5 setze ich einen Homeserver mit Docker auf.</p>
+                <h5 class="card-title translatable" data-de="Homeserver" data-en="Homeserver">Homeserver</h5>
+                <p class="card-text translatable" data-de="Angetrieben vom Rasberrypi 5 setze ich einen Homeserver mit Docker auf." data-en="Powered by Raspberry Pi 5, I am setting up a homeserver with Docker.">Angetrieben vom Rasberrypi 5 setze ich einen Homeserver mit Docker auf.</p>
               </div>
             </div>
           </a>
@@ -231,10 +235,10 @@
         <div class="col-md-4 mb-4">
           <a class="card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBlog3" role="button">
             <div class="card blog-card">
-              <img src="images/Fedora_icon.png" class="card-img-top" alt="Project Image">
+              <img src="images/Fedora_icon.png" class="card-img-top" alt="Project Image" data-de="Projektbild" data-en="Project Image">
               <div class="card-body">
-                <h5 class="card-title">Linux (Fedora 41)</h5>
-                <p class="card-text">Ich nutze Dual-Boot, um sowohl Windows als auch Fedora auf meinem Rechner laufen zu lassen.</p>
+                <h5 class="card-title translatable" data-de="Linux (Fedora 41)" data-en="Linux (Fedora 41)">Linux (Fedora 41)</h5>
+                <p class="card-text translatable" data-de="Ich nutze Dual-Boot, um sowohl Windows als auch Fedora auf meinem Rechner laufen zu lassen." data-en="I use dual-boot to run both Windows and Fedora on my computer.">Ich nutze Dual-Boot, um sowohl Windows als auch Fedora auf meinem Rechner laufen zu lassen.</p>
               </div>
             </div>
           </a>
@@ -243,140 +247,182 @@
     </div>
   </section>
   
-  <!-- Offcanvas Panels for Arbeit and Blog Only -->
+  <!-- Offcanvas Panels for Arbeit and Blog -->
   
-  <!-- Offcanvas for Arbeit Entry 1: Universität Bielefeld - IKG (with banner, no title) -->
+  <!-- Offcanvas for Arbeit Entry 1 -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasArbeit1" aria-labelledby="offcanvasArbeit1Label">
     <div class="offcanvas-header">
       <!-- Title removed as per request -->
     </div>
     <div class="offcanvas-body">
       <!-- Banner image -->
-      <img src="images/uni_job_banner.png" alt="Universität Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
-      <!-- Two-column layout: left text (55%), right PDF (45%) -->
-      <div style="display: flex; height: calc(100% - 300px);">
-        <!-- Left column (55%) -->
-        <div style="flex: 0 0 55%; padding-right: 1rem;">
-          <p>In der Zeit vom 01.01.2024 bis zum 31.03.2025 war ich als studentische Hilfskraft im IT-Support der Fakultät Soziologie tätig. Mit einer wöchentlichen Arbeitszeit von 9,5 Stunden war ich der erste Ansprechpartner für Supportanfragen der Mitarbeitenden und sorgte dafür, dass der reibungslose IT-Betrieb stets gewährleistet war.</p>
-          <p>Meine Aufgaben reichten von der Bedarfsermittlung und Verwaltung von IT-Ressourcen über die individuelle Beratung der Fakultätsmitglieder bis hin zur Betreuung von rund 400 Arbeitsplätzen. Dabei war ich verantwortlich für die Systemadministration von Clients und Servern, die technische Betreuung von Projekten sowie die Organisation und Durchführung von Veranstaltungen – sowohl vor Ort als auch digital. Ein weiterer Schwerpunkt meiner Tätigkeit lag in der Betreuung des selbst gehosteten Befragungstools Limesurvey, wo ich Umfragen erstellte und betreute.</p>
-          <p>Darüber hinaus entwickelte ich praxisnahe Arbeitslösungen, leistete umfassende Anwenderberatung, dokumentierte alle relevanten Prozesse und kümmerte mich um die Reparatur von Soft- und Hardware sowie die Netzwerkadministration. Diese vielfältigen Aufgaben haben es mir ermöglicht, mein IT-Fachwissen in einem dynamischen Umfeld kontinuierlich zu erweitern und zu vertiefen.</p>
-        </div>
-        <!-- Right column (45%): PDF viewer -->
-        <div style="flex: 0 0 45%; overflow-y: auto; border: 1px solid #ccc; padding: 0.5rem;">
-          <embed src="pdf/Zwischenzeugnis_IT_Soziologie.pdf" type="application/pdf" style="width: 100%; height: 100%;" />
-        </div>
+      <img src="images/uni_job_banner.png" alt="Universität Banner" data-de="Universität Banner" data-en="University Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
+      <!-- Full-width text content -->
+      <div style="padding: 1rem; height: calc(100% - 300px); overflow-y: auto;">
+          <p class="translatable" data-de="In der Zeit vom 01.01.2024 bis zum 31.03.2025 war ich als studentische Hilfskraft im IT-Support der Fakultät Soziologie tätig. Mit einer wöchentlichen Arbeitszeit von 9,5 Stunden war ich der erste Ansprechpartner für Supportanfragen der Mitarbeitenden und sorgte dafür, dass der reibungslose IT-Betrieb stets gewährleistet war." data-en="From 01.01.2024 to 31.03.2025, I worked as a student assistant in the IT support of the Faculty of Sociology. With a weekly working time of 9.5 hours, I was the first point of contact for support inquiries and ensured smooth IT operations.">
+            In der Zeit vom 01.01.2024 bis zum 31.03.2025 war ich als studentische Hilfskraft im IT-Support der Fakultät Soziologie tätig. Mit einer wöchentlichen Arbeitszeit von 9,5 Stunden war ich der erste Ansprechpartner für Supportanfragen der Mitarbeitenden und sorgte dafür, dass der reibungslose IT-Betrieb stets gewährleistet war.
+          </p>
+          <p class="translatable" data-de="Meine Aufgaben reichten von der Bedarfsermittlung und Verwaltung von IT-Ressourcen über die individuelle Beratung der Fakultätsmitglieder bis hin zur Betreuung von rund 400 Arbeitsplätzen. Dabei war ich verantwortlich für die Systemadministration von Clients und Servern, die technische Betreuung von Projekten sowie die Organisation und Durchführung von Veranstaltungen – sowohl vor Ort als auch digital. Ein weiterer Schwerpunkt meiner Tätigkeit lag in der Betreuung des selbst gehosteten Befragungstools Limesurvey, wo ich Umfragen erstellte und betreute." data-en="My tasks ranged from assessing IT needs and managing resources to providing individual consulting for faculty members, as well as supporting around 400 workstations. I handled system administration, technical project support, and organized events both on-site and digitally. I also managed the self-hosted survey tool Limesurvey by creating and maintaining surveys.">
+            Meine Aufgaben reichten von der Bedarfsermittlung und Verwaltung von IT-Ressourcen über die individuelle Beratung der Fakultätsmitglieder bis hin zur Betreuung von rund 400 Arbeitsplätzen. Dabei war ich verantwortlich für die Systemadministration von Clients und Servern, die technische Betreuung von Projekten sowie die Organisation und Durchführung von Veranstaltungen – sowohl vor Ort als auch digital. Ein weiterer Schwerpunkt meiner Tätigkeit lag in der Betreuung des selbst gehosteten Befragungstools Limesurvey, wo ich Umfragen erstellte und betreute.
+          </p>
+          <p class="translatable" data-de="Darüber hinaus entwickelte ich praxisnahe Arbeitslösungen, leistete umfassende Anwenderberatung, dokumentierte alle relevanten Prozesse und kümmerte mich um die Reparatur von Soft- und Hardware sowie die Netzwerkadministration. Diese vielfältigen Aufgaben haben es mir ermöglicht, mein IT-Fachwissen in einem dynamischen Umfeld kontinuierlich zu erweitern und zu vertiefen." data-en="Furthermore, I developed practical work solutions, provided comprehensive user consulting, documented all relevant processes, and managed both software/hardware repairs and network administration. These diverse tasks enabled me to continuously expand and deepen my IT expertise in a dynamic environment.">
+            Darüber hinaus entwickelte ich praxisnahe Arbeitslösungen, leistete umfassende Anwenderberatung, dokumentierte alle relevanten Prozesse und kümmerte mich um die Reparatur von Soft- und Hardware sowie die Netzwerkadministration. Diese vielfältigen Aufgaben haben es mir ermöglicht, mein IT-Fachwissen in einem dynamischen Umfeld kontinuierlich zu erweitern und zu vertiefen.
+          </p>
       </div>
     </div>
   </div>
   
-  <!-- Offcanvas for Arbeit Entry 2: Bielefelder Hohlträgerfabrik GmbH (with banner, no title) -->
+  <!-- Offcanvas for Arbeit Entry 2 -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasArbeit2" aria-labelledby="offcanvasArbeit2Label">
     <div class="offcanvas-header">
       <!-- Title removed as per request -->
     </div>
     <div class="offcanvas-body">
-      <!-- Banner image placeholder -->
-      <img src="images/Bielefelder_Hohlträger_banner.png" alt="Bielefelder Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
-      <!-- Two-column layout: left text (55%), right PDF (45%) -->
-      <div style="display: flex; height: calc(100% - 300px);">
-        <!-- Left column with original text (55%) -->
-        <div style="flex: 0 0 55%; padding-right: 1rem;">
-          <p>Zwischen dem 28.08.2020 und dem 20.04.2023 war ich bei der Bielefelder Hohlträger GmbH – meinem ersten Arbeitgeber – als Minijobber tätig. Durch eine Empfehlung aus dem familiären Umfeld kam ich in das Unternehmen, wo ich zunächst zwischen meinem Abiturabschluss und dem Beginn meines Studiums alltägliche Aufgaben übernahm und erste praktische Erfahrungen sammelte.</p>
-          <p>Im Jahr 2020 kehrte ich zurück und konzentrierte mich vor allem auf die Pflege der Stammdaten in Microsoft Dynamics NAV. Hierbei erfasste und archivierte ich Daten, erstellte aussagekräftige Auswertungen und war zudem in diverse kaufmännische Tätigkeiten eingebunden. Diese Aufgaben ermöglichten es mir, einen umfassenden Einblick in betriebliche Abläufe zu gewinnen und meine Fähigkeiten im Umgang mit modernen IT-Systemen und Datenmanagement weiter auszubauen.</p>
-        </div>
-        <!-- Right column (45%): PDF viewer -->
-        <div style="flex: 0 0 45%; overflow-y: auto; border: 1px solid #ccc; padding: 0.5rem;">
-          <embed src="pdf/Zeugnis_Bielefelder_Hohlträgerfabrik.pdf" type="application/pdf" style="width: 100%; height: 100%;" />
-        </div>
+      <!-- Banner image -->
+      <img src="images/Bielefelder_Hohlträger_banner.png" alt="Bielefelder Banner" data-de="Bielefelder Banner" data-en="Bielefelder Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
+      <!-- Full-width text content -->
+      <div style="padding: 1rem; height: calc(100% - 300px); overflow-y: auto;">
+          <p class="translatable" data-de="Zwischen dem 28.08.2020 und dem 20.04.2023 war ich bei der Bielefelder Hohlträger GmbH – meinem ersten Arbeitgeber – als Minijobber tätig. Durch eine Empfehlung aus dem familiären Umfeld kam ich in das Unternehmen, wo ich zunächst zwischen meinem Abiturabschluss und dem Beginn meines Studiums alltägliche Aufgaben übernahm und erste praktische Erfahrungen sammelte." data-en="Between 28.08.2020 and 20.04.2023, I worked as a mini-jobber at Bielefelder Hohlträger GmbH – my first employer. A family recommendation brought me into the company, where I handled everyday tasks between finishing high school and starting my studies, gaining practical experience.">
+            Zwischen dem 28.08.2020 und dem 20.04.2023 war ich bei der Bielefelder Hohlträger GmbH – meinem ersten Arbeitgeber – als Minijobber tätig. Durch eine Empfehlung aus dem familiären Umfeld kam ich in das Unternehmen, wo ich zunächst zwischen meinem Abiturabschluss und dem Beginn meines Studiums alltägliche Aufgaben übernahm und erste praktische Erfahrungen sammelte.
+          </p>
+          <p class="translatable" data-de="Im Jahr 2020 kehrte ich zurück und konzentrierte mich vor allem auf die Pflege der Stammdaten in Microsoft Dynamics NAV. Hierbei erfasste und archivierte ich Daten, erstellte aussagekräftige Auswertungen und war zudem in diverse kaufmännische Tätigkeiten eingebunden. Diese Aufgaben ermöglichten es mir, einen umfassenden Einblick in betriebliche Abläufe zu gewinnen und meine Fähigkeiten im Umgang mit modernen IT-Systemen und Datenmanagement weiter auszubauen." data-en="In 2020, I returned and focused primarily on maintaining master data in Microsoft Dynamics NAV. I recorded and archived data, generated informative reports, and was involved in various administrative tasks. This allowed me to gain comprehensive insight into business processes and further develop my skills with modern IT systems and data management.">
+            Im Jahr 2020 kehrte ich zurück und konzentrierte mich vor allem auf die Pflege der Stammdaten in Microsoft Dynamics NAV. Hierbei erfasste und archivierte ich Daten, erstellte aussagekräftige Auswertungen und war zudem in diverse kaufmännische Tätigkeiten eingebunden. Diese Aufgaben ermöglichten es mir, einen umfassenden Einblick in betriebliche Abläufe zu gewinnen und meine Fähigkeiten im Umgang mit modernen IT-Systemen und Datenmanagement weiter auszubauen.
+          </p>
       </div>
     </div>
   </div>
   
-  <!-- Offcanvas for Arbeit Entry 3: Kenstone Metal Company GmbH (with banner, no title) -->
+  <!-- Offcanvas for Arbeit Entry 3 -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasArbeit3" aria-labelledby="offcanvasArbeit3Label">
     <div class="offcanvas-header">
       <!-- Title removed as per request -->
     </div>
     <div class="offcanvas-body">
-      <!-- Banner image placeholder -->
-      <img src="images/Kenstone_banner.png" alt="Kenstone Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
-      <!-- Two-column layout: left text (55%), right PDF (45%) -->
-      <div style="display: flex; height: calc(100% - 300px);">
-        <!-- Left column with original text (55%) -->
-        <div style="flex: 0 0 55%; padding-right: 1rem;">
-          <p>Zwischen dem 08.11.2021 und dem 30.09.2022 begann meine Tätigkeit bei der Kenstone Metal Company GmbH mit einem Pflichtpraktikum, das ich für den Abschluss meines Bachelors absolvieren musste. Obwohl der Start meines Praktikums zunächst etwas chaotisch verlief, konnte ich bis zum Ende wertvolle Erfahrungen sammeln. Aufgrund meiner engagierten Arbeit wurde mir anschließend ein weiterer Job in derselben Position angeboten.</p>
-          <p>In dieser Rolle war ich hauptsächlich für die Datenpflege im Zeiterfassungssystem zuständig. Zu meinen Aufgaben gehörte es, die Personalstammdaten und Konten regelmäßig zu prüfen und zu aktualisieren sowie eine Bedarfsanalyse durchzuführen, um bei Bedarf Erweiterungen im Zeiterfassungssystem umzusetzen. Darüber hinaus unterstützte ich den Produktionsleiter tatkräftig bei der Personal- und Kapazitätsplanung im Produktionsplanungsprozess.</p>
-        </div>
-        <!-- Right column (45%): PDF viewer -->
-        <div style="flex: 0 0 45%; overflow-y: auto; border: 1px solid #ccc; padding: 0.5rem;">
-          <embed src="pdf/Praktikumszeugnis_Kenstone.pdf" type="application/pdf" style="width: 100%; height: 100%;" />
-        </div>
+      <!-- Banner image -->
+      <img src="images/Kenstone_banner.png" alt="Kenstone Banner" data-de="Kenstone Banner" data-en="Kenstone Banner" style="width: 100%; height: 300px; object-fit: cover; display: block; margin-bottom: 1rem;">
+      <!-- Full-width text content -->
+      <div style="padding: 1rem; height: calc(100% - 300px); overflow-y: auto;">
+          <p class="translatable" data-de="Zwischen dem 08.11.2021 und dem 30.09.2022 begann meine Tätigkeit bei der Kenstone Metal Company GmbH mit einem Pflichtpraktikum, das ich für den Abschluss meines Bachelors absolvieren musste. Obwohl der Start meines Praktikums zunächst etwas chaotisch verlief, konnte ich bis zum Ende wertvolle Erfahrungen sammeln. Aufgrund meiner engagierten Arbeit wurde mir anschließend ein weiterer Job in derselben Position angeboten." data-en="Between 08.11.2021 and 30.09.2022, I began an internship at Kenstone Metal Company GmbH (required for my Bachelor’s degree). Although the start was somewhat chaotic, I gained valuable experience by the end, and due to my dedicated work, I was offered a subsequent position in the same role.">
+            Zwischen dem 08.11.2021 und dem 30.09.2022 begann meine Tätigkeit bei der Kenstone Metal Company GmbH mit einem Pflichtpraktikum, das ich für den Abschluss meines Bachelors absolvieren musste. Obwohl der Start meines Praktikums zunächst etwas chaotisch verlief, konnte ich bis zum Ende wertvolle Erfahrungen sammeln. Aufgrund meiner engagierten Arbeit wurde mir anschließend ein weiterer Job in derselben Position angeboten.
+          </p>
+          <p class="translatable" data-de="In dieser Rolle war ich hauptsächlich für die Datenpflege im Zeiterfassungssystem zuständig. Zu meinen Aufgaben gehörte es, die Personalstammdaten und Konten regelmäßig zu prüfen und zu aktualisieren sowie eine Bedarfsanalyse durchzuführen, um bei Bedarf Erweiterungen im Zeiterfassungssystem umzusetzen. Darüber hinaus unterstützte ich den Produktionsleiter tatkräftig bei der Personal- und Kapazitätsplanung im Produktionsplanungsprozess." data-en="In this role, I was primarily responsible for maintaining data in the time tracking system. My tasks included regularly checking and updating personnel records and accounts, as well as conducting needs analyses to implement system expansions if necessary. Additionally, I actively supported the production manager in personnel and capacity planning during the production scheduling process.">
+            In dieser Rolle war ich hauptsächlich für die Datenpflege im Zeiterfassungssystem zuständig. Zu meinen Aufgaben gehörte es, die Personalstammdaten und Konten regelmäßig zu prüfen und zu aktualisieren sowie eine Bedarfsanalyse durchzuführen, um bei Bedarf Erweiterungen im Zeiterfassungssystem umzusetzen. Darüber hinaus unterstützte ich den Produktionsleiter tatkräftig bei der Personal- und Kapazitätsplanung im Produktionsplanungsprozess.
+          </p>
       </div>
     </div>
   </div>
   
-  <!-- Offcanvas for Blog Entry 1: Erstellen einer persönlichen Website -->
+  <!-- Offcanvas for Blog Entry 1 -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasBlog1" aria-labelledby="offcanvasBlog1Label">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasBlog1Label">Erstellen einer persönlichen Website</h5>
+      <h5 class="offcanvas-title translatable" id="offcanvasBlog1Label" data-de="Erstellen einer persönlichen Website" data-en="Creating a Personal Website">Erstellen einer persönlichen Website</h5>
     </div>
     <div class="offcanvas-body">
-      <p>Da ich nach dem Bachelorabschluss auf der Suche nach einem Job bin, bot es sich an, eine eigene Website zu erstellen. Doch besitze ich keine Kenntnisse in Webentwicklung und in den dort vorherrschenden Programmiersprachen. So entschied ich mich, dieses Projekt mit KI umzusetzen. Die Inspiration kam aber auch durch zwei YouTube-Videos (unten verlinkt). Das Projekt ist die Website, auf der ihr euch gerade befindet.<p>
-      <b>Technische Voraussetzungen</b>
-      <p>Zum Erstellen der Website nutze ich VS Codium. VS Codium ist wie VS Code, nur ohne die Telemetrie von Microsoft. Dafür funktionieren manche Extensions, wie GitHub Copilot, nicht. Für die Website werden CSS, HTML, JavaScript und vor allem ChatGPT verwendet. Zudem ergänzen Bilder und PDFs den "Look" und das "Feeling". Das Hosting der Website läuft über GitHub Pages. Dort kann jeder eine eigene Website kostenlos hosten. Es gibt auch Einschränkungen, zum Beispiel für kommerzielle Shops, aber für dieses Projekt reicht es. Damit der Websitename "feiskamp.com" lautet, muss eine Domain bei einem Service erworben werden. Meine Domain ist bei Namecheap und kostet mich aktuell 14€ im Jahr. Die Domain lässt sich mit ein paar Einstellungen bei Namecheap und GitHub hinzufügen, und nun wird diese für die Website angezeigt.</p>
-      <b>KI-Modell</b>
-      <p>Als Modell wurde hauptsächlich ChatGPT o3-mini-high genommen. Dieses Modell ist zum Zeitpunkt der Erstellung der Website das beste Reasoning-Modell von OpenAI, welches gut für komplexe Probleme geeignet ist. OpenAI bezeichnet den Zweck von o3-mini-high als "Ideal zum Programmieren und für logische Aufgaben". Für dieses Modell muss man zunächst nichts zahlen; in meiner Anfrage hatte ich zwischen 5 und 7 Fragen Zeit, bis ich für ein paar Stunden meinen Zugang verlor. Wenn ab und zu ein bis zwei Funktionen hinzugefügt werden sollen, mag das reichen – arbeitet man allerdings länger an einem Projekt, funktioniert diese Option nur schwer. So entschied ich mich, 20$ im Monat für ChatGPT Plus zu bezahlen, und bin zu diesem Zeitpunkt sehr zufrieden. Ich erreichte keine Grenzen und konnte so meinen Gedanken und Inputs freien Lauf lassen.<p>
-        
-      <b>Ablauf der Erstellung der Website</b>
-      <p>Der Ablauf der Erstellung von Bereichen und Funktionen verlief immer gleich. Wenn ich eine Idee bekam, gab ich meinen Input in ChatGPT ein, und entweder gab es mir das Ergebnis, das ich wollte, oder ich musste in mehreren Konversationen meine Idee näher erläutern, bis meine Vision erreicht war. Doch ich bin auch kein Prompt Engineer – also jemand, der guten Input liefert, um so gute Ergebnisse zu erzielen. Denn das Ergebnis jeder KI ist nur so gut wie der Input. Da ich mit dem Output von ChatGPT meist zufrieden war, legte ich meinen Fokus nicht auf das Prompt Engineering. In dem verlinkten Video von "The Morpheus" erläutert dieser seinen Prompt. Ich übernahm Teile wie das Stellen von Fragen oder dass er den gesamten Code zurückgeben sollte (sonst tat die KI das nicht immer). Die Fragen halfen mir und der KI dabei, schneller ein gutes Ergebnis zu erzielen. Eine meiner ersten Anfragen war:
+      <p class="translatable" data-de="Da ich nach dem Bachelorabschluss auf der Suche nach einem Job bin, bot es sich an, eine eigene Website zu erstellen. Doch besitze ich keine Kenntnisse in Webentwicklung und in den dort vorherrschenden Programmiersprachen. So entschied ich mich, dieses Projekt mit KI umzusetzen. Die Inspiration kam aber auch durch zwei YouTube-Videos (unten verlinkt). Das Projekt ist die Website, auf der ihr euch gerade befindet." data-en="After my Bachelor’s degree, while searching for a job, I decided to create my own website. However, lacking web development skills and familiarity with the common programming languages, I chose to implement this project using AI. The inspiration also came from two YouTube videos (linked below). This project is the website you are currently viewing.">
+        Da ich nach dem Bachelorabschluss auf der Suche nach einem Job bin, bot es sich an, eine eigene Website zu erstellen. Doch besitze ich keine Kenntnisse in Webentwicklung und in den dort vorherrschenden Programmiersprachen. So entschied ich mich, dieses Projekt mit KI umzusetzen. Die Inspiration kam aber auch durch zwei YouTube-Videos (unten verlinkt). Das Projekt ist die Website, auf der ihr euch gerade befindet.
+      </p>
+      <b class="translatable" data-de="Technische Voraussetzungen" data-en="Technical Requirements">Technische Voraussetzungen</b>
+      <p class="translatable" data-de="Zum Erstellen der Website nutze ich VS Codium. VS Codium ist wie VS Code, nur ohne die Telemetrie von Microsoft. Dafür funktionieren manche Extensions, wie GitHub Copilot, nicht. Für die Website werden CSS, HTML, JavaScript und vor allem ChatGPT verwendet. Zudem ergänzen Bilder und PDFs den 'Look' und das 'Feeling'. Das Hosting der Website läuft über GitHub Pages. Dort kann jeder eine eigene Website kostenlos hosten. Es gibt auch Einschränkungen, zum Beispiel für kommerzielle Shops, aber für dieses Projekt reicht es. Damit der Websitename 'feiskamp.com' lautet, muss eine Domain bei einem Service erworben werden. Meine Domain ist bei Namecheap und kostet mich aktuell 14€ im Jahr. Die Domain lässt sich mit ein paar Einstellungen bei Namecheap und GitHub hinzufügen, und nun wird diese für die Website angezeigt." data-en="I use VS Codium to create the website. VS Codium is similar to VS Code, but without Microsoft’s telemetry (which means some extensions like GitHub Copilot might not work). The website is built using CSS, HTML, JavaScript, and especially ChatGPT. Additionally, images and PDFs complement the ‘look’ and ‘feel’. The site is hosted on GitHub Pages, allowing anyone to host a website for free. Although there are limitations (e.g., for commercial shops), it is sufficient for this project. To have the website name 'feiskamp.com', a domain must be purchased. My domain is with Namecheap and currently costs 14€ per year. With a few settings on Namecheap and GitHub, the domain is linked to the website.">
+        Zum Erstellen der Website nutze ich VS Codium. VS Codium ist wie VS Code, nur ohne die Telemetrie von Microsoft. Dafür funktionieren manche Extensions, wie GitHub Copilot, nicht. Für die Website werden CSS, HTML, JavaScript und vor allem ChatGPT verwendet. Zudem ergänzen Bilder und PDFs den "Look" und das "Feeling". Das Hosting der Website läuft über GitHub Pages. Dort kann jeder eine eigene Website kostenlos hosten. Es gibt auch Einschränkungen, zum Beispiel für kommerzielle Shops, aber für dieses Projekt reicht es. Damit der Websitename "feiskamp.com" lautet, muss eine Domain bei einem Service erworben werden. Meine Domain ist bei Namecheap und kostet mich aktuell 14€ im Jahr. Die Domain lässt sich mit ein paar Einstellungen bei Namecheap und GitHub hinzufügen, und nun wird diese für die Website angezeigt.
+      </p>
+      <b class="translatable" data-de="KI-Modell" data-en="AI Model">KI-Modell</b>
+      <p class="translatable" data-de="Als Modell wurde hauptsächlich ChatGPT o3-mini-high genommen. Dieses Modell ist zum Zeitpunkt der Erstellung der Website das beste Reasoning-Modell von OpenAI, welches gut für komplexe Probleme geeignet ist. OpenAI bezeichnet den Zweck von o3-mini-high als 'Ideal zum Programmieren und für logische Aufgaben'. Für dieses Modell muss man zunächst nichts zahlen; in meiner Anfrage hatte ich zwischen 5 und 7 Fragen Zeit, bis ich für ein paar Stunden meinen Zugang verlor. Wenn ab und zu ein bis zwei Funktionen hinzugefügt werden sollen, mag das reichen – arbeitet man allerdings länger an einem Projekt, funktioniert diese Option nur schwer. So entschied ich mich, 20$ im Monat für ChatGPT Plus zu bezahlen, und bin zu diesem Zeitpunkt sehr zufrieden. Ich erreichte keine Grenzen und konnte so meinen Gedanken und Inputs freien Lauf lassen." data-en="I primarily used the ChatGPT o3-mini-high model. At the time of creating the website, it was OpenAI’s best reasoning model—ideal for complex problems. OpenAI describes it as 'ideal for programming and logical tasks.' Initially free to use (though I experienced temporary access loss after 5–7 questions), it proved insufficient for longer projects. Therefore, I opted to pay $20 per month for ChatGPT Plus, and I am very satisfied with the results.">
+        Als Modell wurde hauptsächlich ChatGPT o3-mini-high genommen. Dieses Modell ist zum Zeitpunkt der Erstellung der Website das beste Reasoning-Modell von OpenAI, welches gut für komplexe Probleme geeignet ist. OpenAI bezeichnet den Zweck von o3-mini-high als "Ideal zum Programmieren und für logische Aufgaben". Für dieses Modell muss man zunächst nichts zahlen; in meiner Anfrage hatte ich zwischen 5 und 7 Fragen Zeit, bis ich für ein paar Stunden meinen Zugang verlor. Wenn ab und zu ein bis zwei Funktionen hinzugefügt werden sollen, mag das reichen – arbeitet man allerdings länger an einem Projekt, funktioniert diese Option nur schwer. So entschied ich mich, 20$ im Monat für ChatGPT Plus zu bezahlen, und bin zu diesem Zeitpunkt sehr zufrieden. Ich erreichte keine Grenzen und konnte so meinen Gedanken und Inputs freien Lauf lassen.
+      </p>
+      <b class="translatable" data-de="Ablauf der Erstellung der Website" data-en="Process of Creating the Website">Ablauf der Erstellung der Website</b>
+      <p class="translatable" data-de="Der Ablauf der Erstellung von Bereichen und Funktionen verlief immer gleich. Wenn ich eine Idee bekam, gab ich meinen Input in ChatGPT ein, und entweder gab es mir das Ergebnis, das ich wollte, oder ich musste in mehreren Konversationen meine Idee näher erläutern, bis meine Vision erreicht war. Doch ich bin auch kein Prompt Engineer – also jemand, der guten Input liefert, um so gute Ergebnisse zu erzielen. Denn das Ergebnis jeder KI ist nur so gut wie der Input. Da ich mit dem Output von ChatGPT meist zufrieden war, legte ich meinen Fokus nicht auf das Prompt Engineering. In dem verlinkten Video von 'The Morpheus' erläutert dieser seinen Prompt. Ich übernahm Teile wie das Stellen von Fragen oder dass er den gesamten Code zurückgeben sollte (sonst tat die KI das nicht immer). Die Fragen halfen mir und der KI dabei, schneller ein gutes Ergebnis zu erzielen. Eine meiner ersten Anfragen war:
+        &quot;I am creating a profile website for me. The goal is to show my work station and education as well as projects I am working on. Now I want a colour scheme that is suitable for the IT sector on my page, as well as sections under 'Arbeit' and 'Education' to show my work (Arbeit) / education (Ausbildung) stations. I need 3 Arbeit and 2 Ausbildung sections, each with a picture for a logo of the company. Also, I want to have cards to portray my projects under 'blog'. If you have questions, feel free to ask.
+        --Code--
+        [Hier war der Input meines bisherigen Codes]&quot;" data-en="The process of creating the website was always the same. When I had an idea, I provided my input to ChatGPT and either received the desired result or had to elaborate further in several conversations until my vision was achieved. I am not a prompt engineer—someone who always supplies perfect input for perfect output. Since I was mostly satisfied with ChatGPT's output, I did not focus on prompt engineering. In the linked video by 'The Morpheus', he explains his prompt. I adopted aspects such as asking questions or instructing the AI to return the entire code (since it wouldn’t always do so). The questions helped both me and the AI reach a good result faster. One of my first requests was:
+        &quot;I am creating a profile website for me. The goal is to show my work station and education as well as projects I am working on. Now I want a colour scheme that is suitable for the IT sector on my page, as well as sections under 'Arbeit' and 'Education' to show my work (Arbeit) / education (Ausbildung) stations. I need 3 Arbeit and 2 Ausbildung sections, each with a picture for a logo of the company. Also, I want to have cards to portray my projects under 'blog'. If you have questions, feel free to ask.
+        --Code--
+        [Here was the input of my previous code]&quot;" >
+        Der Ablauf der Erstellung von Bereichen und Funktionen verlief immer gleich. Wenn ich eine Idee bekam, gab ich meinen Input in ChatGPT ein, und entweder gab es mir das Ergebnis, das ich wollte, oder ich musste in mehreren Konversationen meine Idee näher erläutern, bis meine Vision erreicht war. Doch ich bin auch kein Prompt Engineer – also jemand, der guten Input liefert, um so gute Ergebnisse zu erzielen. Denn das Ergebnis jeder KI ist nur so gut wie der Input. Da ich mit dem Output von ChatGPT meist zufrieden war, legte ich meinen Fokus nicht auf das Prompt Engineering. In dem verlinkten Video von "The Morpheus" erläutert dieser seinen Prompt. Ich übernahm Teile wie das Stellen von Fragen oder dass er den gesamten Code zurückgeben sollte (sonst tat die KI das nicht immer). Die Fragen halfen mir und der KI dabei, schneller ein gutes Ergebnis zu erzielen. Eine meiner ersten Anfragen war:
         "I am creating a profile website for me. The goal is to show my work station and education as well as projects I am working on. Now I want a colour scheme that is suitable for the IT sector on my page, as well as sections under 'Arbeit' and 'Education' to show my work (Arbeit) / education (Ausbildung) stations. I need 3 Arbeit and 2 Ausbildung sections, each with a picture for a logo of the company. Also, I want to have cards to portray my projects under 'blog'. If you have questions, feel free to ask.
         --Code--
-        [Hier war der Input meines bisherigen Codes]"<p>
-      <p>Sicherlich ist aufgefallen, dass der Textinput Englisch ist. Das liegt am Training der KI. Die KI wurde in Amerika mit überwiegend englischem Input trainiert und "versteht" so besser Englisch. Selbstverständlich kann auch auf Deutsch mit ihr gearbeitet werden, doch soll die Arbeit in Englisch die Qualität erhöhen. Jedenfalls umfasste die Antwort von ChatGPT sieben Fragen – darunter zum Beispiel: "For the 3 Arbeit and 2 Ausbildung sections, do you envision each as a separate card or container with the company logo and details?" Daran hatte ich gar nicht gedacht. Ich hatte zwar eine Vorstellung, doch hatte ich dies der KI nicht mitgeteilt. Woher soll sie es also wissen? Eine von vielen Gelegenheiten, bei denen mir die Fragen halfen, Zeit zu sparen und das Ergebnis zu verbessern.<p>
-      <p>Doch ganz ohne menschliches Eingreifen habe ich die Website nicht erstellt. Die Texte, unter anderem auch dieser hier, habe ich meist selbst geschrieben. Die KI half dann bei der Verbesserung der Satzstruktur, Rechtschreibung und Grammatik. Auch habe ich die Bilder und PDFs selbst eingefügt. Die Stellen, an denen sie eingefügt wurden, habe ich erstellen lassen und dann den Content per Strg+V oder über die Ordnerstruktur (z.B. images/uni_job_banner.png) eingefügt.<p>
-      <b>Probleme</b>
-      <p>Unlösbare Probleme gab es bisher keine. Funktionierte auf einmal etwas nicht mehr, sagte ich der KI das, und sie fixte es, auch wenn es manchmal mehrere Versuche dauerte. Manchmal zerstörte die KI kurzfristig einige Teile der Website, doch mit einem Hinweis lief alles wieder flüssig. Gelegentlich schaute ich selbst in den Code, falls die KI es nach zwei Versuchen nicht hinbekam. Doch geändert hat das meistens nicht; beim dritten oder vierten Mal schaffte es die KI, den Fehler zu beheben, und das Ergebnis war perfekt.</p>
-      <b>Youtube Links</b>
+        [Hier war der Input meines bisherigen Codes]"
+      </p>
+      <p class="translatable" data-de="Sicherlich ist aufgefallen, dass der Textinput Englisch ist. Das liegt am Training der KI. Die KI wurde in Amerika mit überwiegend englischem Input trainiert und 'versteht' so besser Englisch. Selbstverständlich kann auch auf Deutsch mit ihr gearbeitet werden, doch soll die Arbeit in Englisch die Qualität erhöhen. Jedenfalls umfasste die Antwort von ChatGPT sieben Fragen – darunter zum Beispiel: 'For the 3 Arbeit and 2 Ausbildung sections, do you envision each as a separate card or container with the company logo and details?' Daran hatte ich gar nicht gedacht. Ich hatte zwar eine Vorstellung, doch hatte ich dies der KI nicht mitgeteilt. Woher soll sie es also wissen? Eine von vielen Gelegenheiten, bei denen mir die Fragen halfen, Zeit zu sparen und das Ergebnis zu verbessern." data-en="You may have noticed that the text input is in English. This is due to the AI’s training—it was primarily trained on English input in America, which makes it understand English better. Of course, it can work in German too, but using English is meant to enhance quality. In any case, ChatGPT’s response included seven questions—for example: 'For the 3 Arbeit and 2 Ausbildung sections, do you envision each as a separate card or container with the company logo and details?' I hadn’t thought of that. Although I had an idea, I hadn’t told the AI. How was it supposed to know? This is one of many occasions where the questions helped me save time and improve the outcome.">
+        Sicherlich ist aufgefallen, dass der Textinput Englisch ist. Das liegt am Training der KI. Die KI wurde in Amerika mit überwiegend englischem Input trainiert und "versteht" so besser Englisch. Selbstverständlich kann auch auf Deutsch mit ihr gearbeitet werden, doch soll die Arbeit in Englisch die Qualität erhöhen. Jedenfalls umfasste die Antwort von ChatGPT sieben Fragen – darunter zum Beispiel: "For the 3 Arbeit and 2 Ausbildung sections, do you envision each as a separate card or container with the company logo and details?" Daran hatte ich gar nicht gedacht. Ich hatte zwar eine Vorstellung, doch hatte ich dies der KI nicht mitgeteilt. Woher soll sie es also wissen? Eine von vielen Gelegenheiten, bei denen mir die Fragen halfen, Zeit zu sparen und das Ergebnis zu verbessern.
+      </p>
+      <p class="translatable" data-de="Doch ganz ohne menschliches Eingreifen habe ich die Website nicht erstellt. Die Texte, unter anderem auch dieser hier, habe ich meist selbst geschrieben. Die KI half dann bei der Verbesserung der Satzstruktur, Rechtschreibung und Grammatik. Auch habe ich die Bilder und PDFs selbst eingefügt. Die Stellen, an denen sie eingefügt wurden, habe ich erstellen lassen und dann den Content per Strg+V oder über die Ordnerstruktur (z.B. images/uni_job_banner.png) eingefügt." data-en="I did not create the website entirely without human intervention. I wrote most of the texts (including this one) myself. The AI then helped improve sentence structure, spelling, and grammar. I also inserted the images and PDFs manually—either by copy-pasting or through the folder structure (e.g., images/uni_job_banner.png).">
+        Doch ganz ohne menschliches Eingreifen habe ich die Website nicht erstellt. Die Texte, unter anderem auch dieser hier, habe ich meist selbst geschrieben. Die KI half dann bei der Verbesserung der Satzstruktur, Rechtschreibung und Grammatik. Auch habe ich die Bilder und PDFs selbst eingefügt. Die Stellen, an denen sie eingefügt wurden, habe ich erstellen lassen und dann den Content per Strg+V oder über die Ordnerstruktur (z.B. images/uni_job_banner.png) eingefügt.
+      </p>
+      <b class="translatable" data-de="Probleme" data-en="Problems">Probleme</b>
+      <p class="translatable" data-de="Unlösbare Probleme gab es bisher keine. Funktionierte auf einmal etwas nicht mehr, sagte ich der KI das, und sie fixte es, auch wenn es manchmal mehrere Versuche dauerte. Manchmal zerstörte die KI kurzfristig einige Teile der Website, doch mit einem Hinweis lief alles wieder flüssig. Gelegentlich schaute ich selbst in den Code, falls die KI es nach zwei Versuchen nicht hinbekam. Doch geändert hat das meistens nicht; beim dritten oder vierten Mal schaffte es die KI, den Fehler zu beheben, und das Ergebnis war perfekt." data-en="There have been no unsolvable problems so far. Whenever something stopped working, I informed the AI, and it fixed the issue—even if it sometimes took several attempts. Occasionally, the AI temporarily broke parts of the website, but with a hint everything ran smoothly again. Sometimes I even checked the code if the AI couldn’t fix it after two tries, but usually nothing changed; on the third or fourth attempt, the AI managed to correct the error and the result was perfect.">
+        Unlösbare Probleme gab es bisher keine. Funktionierte auf einmal etwas nicht mehr, sagte ich der KI das, und sie fixte es, auch wenn es manchmal mehrere Versuche dauerte. Manchmal zerstörte die KI kurzfristig einige Teile der Website, doch mit einem Hinweis lief alles wieder flüssig. Gelegentlich schaute ich selbst in den Code, falls die KI es nach zwei Versuchen nicht hinbekam. Doch geändert hat das meistens nicht; beim dritten oder vierten Mal schaffte es die KI, den Fehler zu beheben, und das Ergebnis war perfekt.
+      </p>
+      <b class="translatable" data-de="Youtube Links" data-en="YouTube Links">Youtube Links</b>
       <div class="mt-3">
-        <a href="https://www.youtube.com/watch?v=EXfFBEuCAr0" target="_blank" class="d-block">Website Video von NetworkChuck</a>
-        <a href="https://www.youtube.com/watch?v=bCfPm8inzSQ" target="_blank" class="d-block">KI Video von TheMorpheus</a>
+        <a href="https://www.youtube.com/watch?v=EXfFBEuCAr0" target="_blank" class="d-block translatable" data-de="Website Video von NetworkChuck" data-en="Website video by NetworkChuck">Website Video von NetworkChuck</a>
+        <a href="https://www.youtube.com/watch?v=bCfPm8inzSQ" target="_blank" class="d-block translatable" data-de="KI Video von TheMorpheus" data-en="AI video by TheMorpheus">KI Video von TheMorpheus</a>
       </div>
     </div>
   </div>
   
-  <!-- Offcanvas for Blog Entry 2: Homeserver -->
+  <!-- Offcanvas for Blog Entry 2 -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasBlog2" aria-labelledby="offcanvasBlog2Label">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasBlog2Label">Homeserver</h5>
+      <h5 class="offcanvas-title translatable" id="offcanvasBlog2Label" data-de="Homeserver" data-en="Homeserver">Homeserver</h5>
     </div>
     <div class="offcanvas-body">
-      <p>Ein Homeserver ist ein Projekt, das ich schon seit über einem Jahr umsetzen wollte. Warum überhaupt ein Homeserver? Dafür gibt es viele Gründe: Sei es, eine eigene Cloud-Lösung zu haben, um nicht an ein Abo-Modell anderer Firmen gebunden zu sein, oder das Vertrauen darauf, dass der Cloudanbieter die Daten sicher aufbewahrt und die Privatsphäre respektiert. Ebenso soll verhindert werden, dass KI an den eigenen Daten trainiert wird, und Behörde Zugänge auf die eigenen Daten erhalten. Manche dieser Argumente sind vielleicht nicht für jeden nachvollziehbar, doch viele dieser Fälle sind bereits aufgetreten. Bisher habe ich nur über die Speicherung von Daten in der Cloud geschrieben. Mit einem Homeserver lassen sich jedoch noch viele weitere Projekte realisieren, wie etwa Werbe- oder Phishingblocker oder der Aufbau eines „eigenen Netflix“. Der ausschlaggebende Punkt für mich war das Bedürfnis, Neues zu lernen und zu sehen, wie gut ein Homeserver funktionieren kann.</p>
-      <b>Technische Voraussetzungen</b>
-      <p>Einen Homeserver kann auf verschiedene Weisen umgesetzt werden. Man könnte einen NAS kaufen, wodurch man eine Cloudspeicher-Lösung ohne großen Aufwand erhält und sich nicht intensiv in das Thema einarbeiten muss – eine Lösung, die ich jedoch nicht gewählt habe. Durch die YouTube-Videos von ct'3003, die sehr empfehlenswert sind, fiel meine Entscheidung entweder auf einen gebrauchten Thin Client oder auf einen Raspberry Pi. Gebrauchte Thin Clients sind dünne und kleine Mini-Computer, die meist von Unternehmen angeschafft und anschließend nicht mehr benötigt werden. Diese kann man bereits ab 30 € erwerben, auch wenn für dieses Projekt ein etwas höherer Betrag ausgegeben werden kann, um einen stabilen Betrieb des Servers zu gewährleisten. Ich entschied mich für die Raspberry-Pi-Variante. Raspberry Pis werden von der Raspberry Pi Foundation entwickelt und über verschiedene Händler vertrieben. Diese Einplatinencomputer können sogar als leistungsschwache Desktoprechner genutzt werden.</p>
-      <p>Doch ein Raspberry Pi wird, wenn man ihn so kauft, ohne jegliches Zubehör geliefert – das heißt, ohne Kabel, ohne Bootmöglichkeit, ohne Festplattenspeicher und ohne Gehäuse. All dies muss separat besorgt werden. Zwar bietet die Raspberry Pi Foundation all das Genannte in der Regel an, sodass nicht lange nach Zubehör gesucht werden muss, in diesem Fall musste ich jedoch nach passenden Komponenten suchen. Das vorhandene Ladekabel konnte ich jedoch verwenden. Da unter anderem ein Homeserver mit Cloud-Storage realisiert werden soll, wird eine Möglichkeit benötigt, Daten schnell zu transferieren, um rasch auf sie zugreifen zu können. NVMe-SSDs sind dafür eine gute Wahl, da sie schneller sind als herkömmliche 2,5‑Zoll‑SATA‑SSDs. Der Raspberry Pi verfügt zwar über einen PCIe‑Anschluss, allerdings ist das Einstecken nicht so einfach wie in einem „normalen“ Rechner. Es wird ein PCIe‑Kabel benötigt sowie ein Modul, auf dem die SSD montiert werden kann. Sobald man dieses Modul besitzt, passt das Gehäuse nicht mehr, und es wird ein anderes benötigt. Es gibt viele Drittanbieter, sodass man eine große Auswahl hat. Zum Booten des Raspberry Pis wird außerdem eine SD‑Karte benötigt, da der Bootvorgang mit ihr am besten funktioniert. Zusätzlich wird ein USB‑Stick benötigt, der Grund dafür wird im folgenden Abschnitt erläutert.</p>
-      <b>Aufbau und Start</b>
-      <p>Mehr folgt, sobald alle Teile angekommen sind und der Homeserver einsatzbereit ist.</p>
+      <p class="translatable" data-de="Ein Homeserver ist ein Projekt, das ich schon seit über einem Jahr umsetzen wollte. Warum überhaupt ein Homeserver? Dafür gibt es viele Gründe: Sei es, eine eigene Cloud-Lösung zu haben, um nicht an ein Abo-Modell anderer Firmen gebunden zu sein, oder das Vertrauen darauf, dass der Cloudanbieter die Daten sicher aufbewahrt und die Privatsphäre respektiert. Ebenso soll verhindert werden, dass KI an den eigenen Daten trainiert wird, und Behörde Zugänge auf die eigenen Daten erhalten. Manche dieser Argumente sind vielleicht nicht für jeden nachvollziehbar, doch viele dieser Fälle sind bereits aufgetreten. Bisher habe ich nur über die Speicherung von Daten in der Cloud geschrieben. Mit einem Homeserver lassen sich jedoch noch viele weitere Projekte realisieren, wie etwa Werbe- oder Phishingblocker oder der Aufbau eines „eigenen Netflix“. Der ausschlaggebende Punkt für mich war das Bedürfnis, Neues zu lernen und zu sehen, wie gut ein Homeserver funktionieren kann." data-en="A homeserver is a project I have wanted to implement for over a year. There are many reasons for having a homeserver: to have your own cloud solution instead of being bound to subscription models from other companies, to trust that your data is stored securely while preserving privacy, and to prevent AI from training on your data or authorities from accessing it. Although some arguments might not be universally convincing, many such cases have already occurred. So far, I have only written about storing data in the cloud. However, with a homeserver, many other projects—such as ad or phishing blockers or even setting up your own 'Netflix'—can be realized. The decisive factor for me was the desire to learn new things and see how well a homeserver can work.">
+        Ein Homeserver ist ein Projekt, das ich schon seit über einem Jahr umsetzen wollte. Warum überhaupt ein Homeserver? Dafür gibt es viele Gründe: Sei es, eine eigene Cloud-Lösung zu haben, um nicht an ein Abo-Modell anderer Firmen gebunden zu sein, oder das Vertrauen darauf, dass der Cloudanbieter die Daten sicher aufbewahrt und die Privatsphäre respektiert. Ebenso soll verhindert werden, dass KI an den eigenen Daten trainiert wird, und Behörde Zugänge auf die eigenen Daten erhalten. Manche dieser Argumente sind vielleicht nicht für jeden nachvollziehbar, doch viele dieser Fälle sind bereits aufgetreten. Bisher habe ich nur über die Speicherung von Daten in der Cloud geschrieben. Mit einem Homeserver lassen sich jedoch noch viele weitere Projekte realisieren, wie etwa Werbe- oder Phishingblocker oder der Aufbau eines „eigenen Netflix“. Der ausschlaggebende Punkt für mich war das Bedürfnis, Neues zu lernen und zu sehen, wie gut ein Homeserver funktionieren kann.
+      </p>
+      <b class="translatable" data-de="Technische Voraussetzungen" data-en="Technical Requirements">Technische Voraussetzungen</b>
+      <p class="translatable" data-de="Einen Homeserver kann auf verschiedene Weisen umgesetzt werden. Man könnte einen NAS kaufen, wodurch man eine Cloudspeicher-Lösung ohne großen Aufwand erhält und sich nicht intensiv in das Thema einarbeiten muss – eine Lösung, die ich jedoch nicht gewählt habe. Durch die YouTube-Videos von ct'3003, die sehr empfehlenswert sind, fiel meine Entscheidung entweder auf einen gebrauchten Thin Client oder auf einen Raspberry Pi. Gebrauchte Thin Clients sind dünne und kleine Mini-Computer, die meist von Unternehmen angeschafft und anschließend nicht mehr benötigt werden. Diese kann man bereits ab 30 € erwerben, auch wenn für dieses Projekt ein etwas höherer Betrag ausgegeben werden kann, um einen stabilen Betrieb des Servers zu gewährleisten. Ich entschied mich für die Raspberry-Pi-Variante. Raspberry Pis werden von der Raspberry Pi Foundation entwickelt und über verschiedene Händler vertrieben. Diese Einplatinencomputer können sogar als leistungsschwache Desktoprechner genutzt werden." data-en="A homeserver can be implemented in various ways. One option is to buy a NAS, which provides a cloud storage solution with minimal effort without needing in-depth technical knowledge – though that wasn’t my choice. Influenced by highly recommended YouTube videos by ct'3003, I opted either for a used thin client or a Raspberry Pi. Used thin clients are small computers typically purchased by companies and then discarded; they can be bought for around €30, though a slightly higher investment might be necessary for stable server operation. I chose the Raspberry Pi variant. Raspberry Pis are developed by the Raspberry Pi Foundation and sold by various vendors. These single-board computers can even be used as low-power desktops.">
+        Einen Homeserver kann auf verschiedene Weisen umgesetzt werden. Man könnte einen NAS kaufen, wodurch man eine Cloudspeicher-Lösung ohne großen Aufwand erhält und sich nicht intensiv in das Thema einarbeiten muss – eine Lösung, die ich jedoch nicht gewählt habe. Durch die YouTube-Videos von ct'3003, die sehr empfehlenswert sind, fiel meine Entscheidung entweder auf einen gebrauchten Thin Client oder auf einen Raspberry Pi. Gebrauchte Thin Clients sind dünne und kleine Mini-Computer, die meist von Unternehmen angeschafft und anschließend nicht mehr benötigt werden. Diese kann man bereits ab 30 € erwerben, auch wenn für dieses Projekt ein etwas höherer Betrag ausgegeben werden kann, um einen stabilen Betrieb des Servers zu gewährleisten. Ich entschied mich für die Raspberry-Pi-Variante. Raspberry Pis werden von der Raspberry Pi Foundation entwickelt und über verschiedene Händler vertrieben. Diese Einplatinencomputer können sogar als leistungsschwache Desktoprechner genutzt werden.
+      </p>
+      <p class="translatable" data-de="Doch ein Raspberry Pi wird, wenn man ihn so kauft, ohne jegliches Zubehör geliefert – das heißt, ohne Kabel, ohne Bootmöglichkeit, ohne Festplattenspeicher und ohne Gehäuse. All dies muss separat besorgt werden. Zwar bietet die Raspberry Pi Foundation all das Genannte in der Regel an, sodass nicht lange nach Zubehör gesucht werden muss, in diesem Fall musste ich jedoch nach passenden Komponenten suchen. Das vorhandene Ladekabel konnte ich jedoch verwenden. Da unter anderem ein Homeserver mit Cloud-Storage realisiert werden soll, wird eine Möglichkeit benötigt, Daten schnell zu transferieren, um rasch auf sie zugreifen zu können. NVMe-SSDs sind dafür eine gute Wahl, da sie schneller sind als herkömmliche 2,5‑Zoll‑SATA‑SSDs. Der Raspberry Pi verfügt zwar über einen PCIe‑Anschluss, allerdings ist das Einstecken nicht so einfach wie in einem „normalen“ Rechner. Es wird ein PCIe‑Kabel benötigt sowie ein Modul, auf dem die SSD montiert werden kann. Sobald man dieses Modul besitzt, passt das Gehäuse nicht mehr, und es wird ein anderes benötigt. Es gibt viele Drittanbieter, sodass man eine große Auswahl hat. Zum Booten des Raspberry Pis wird außerdem eine SD‑Karte benötigt, da der Bootvorgang mit ihr am besten funktioniert. Zusätzlich wird ein USB‑Stick benötigt, der Grund dafür wird im folgenden Abschnitt erläutert." data-en="However, when you buy a Raspberry Pi, it comes without any accessories – no cables, no boot options, no storage, and no case. All these must be purchased separately. Although the Raspberry Pi Foundation typically offers these items, I had to search for the right components in this case. I was able to use an existing charging cable. Since a homeserver with cloud storage requires fast data transfer, NVMe SSDs are a good choice because they are faster than conventional 2.5-inch SATA SSDs. While the Raspberry Pi does have a PCIe slot, installing one isn’t as straightforward as in a typical computer – you need a PCIe cable and a module to mount the SSD. Once you have this module, the original case may no longer fit, and you’ll need another. There are many third-party options available. Additionally, an SD card is required for booting, as it works best with one, and a USB stick is also needed, as explained in the next section.">
+        Doch ein Raspberry Pi wird, wenn man ihn so kauft, ohne jegliches Zubehör geliefert – das heißt, ohne Kabel, ohne Bootmöglichkeit, ohne Festplattenspeicher und ohne Gehäuse. All dies muss separat besorgt werden. Zwar bietet die Raspberry Pi Foundation all das Genannte in der Regel an, sodass nicht lange nach Zubehör gesucht werden muss, in diesem Fall musste ich jedoch nach passenden Komponenten suchen. Das vorhandene Ladekabel konnte ich jedoch verwenden. Da unter anderem ein Homeserver mit Cloud-Storage realisiert werden soll, wird eine Möglichkeit benötigt, Daten schnell zu transferieren, um rasch auf sie zugreifen zu können. NVMe-SSDs sind dafür eine gute Wahl, da sie schneller sind als herkömmliche 2,5‑Zoll‑SATA‑SSDs. Der Raspberry Pi verfügt zwar über einen PCIe‑Anschluss, allerdings ist das Einstecken nicht so einfach wie in einem „normalen“ Rechner. Es wird ein PCIe‑Kabel benötigt sowie ein Modul, auf dem die SSD montiert werden kann. Sobald man dieses Modul besitzt, passt das Gehäuse nicht mehr, und es wird ein anderes benötigt. Es gibt viele Drittanbieter, sodass man eine große Auswahl hat. Zum Booten des Raspberry Pis wird außerdem eine SD‑Karte benötigt, da der Bootvorgang mit ihr am besten funktioniert. Zusätzlich wird ein USB‑Stick benötigt, der Grund dafür wird im folgenden Abschnitt erläutert.
+      </p>
+      <b class="translatable" data-de="Aufbau und Start" data-en="Setup and Launch">Aufbau und Start</b>
+      <p class="translatable" data-de="Mehr folgt, sobald alle Teile angekommen sind und der Homeserver einsatzbereit ist." data-en="More will follow once all parts have arrived and the homeserver is ready for operation.">Mehr folgt, sobald alle Teile angekommen sind und der Homeserver einsatzbereit ist.</p>
     </div>
   </div>
   
-  <!-- Offcanvas for Blog Entry 3: Linux (Fedora 41) -->
+  <!-- Offcanvas for Blog Entry 3 -->
   <div class="offcanvas offcanvas-full" tabindex="-1" id="offcanvasBlog3" aria-labelledby="offcanvasBlog3Label">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasBlog3Label">Linux (Fedora 41)</h5>
+      <h5 class="offcanvas-title translatable" id="offcanvasBlog3Label" data-de="Linux (Fedora 41)" data-en="Linux (Fedora 41)">Linux (Fedora 41)</h5>
     </div>
     <div class="offcanvas-body">
-      <p>Linux ist ein Begriff, unter dem ich bisher immer nur ein System für Programmierer verstanden habe. Doch änderte sich meine Meinung, als ich auf der Arbeit zum ersten Mal an einem Kubuntu-Gerät saß und durch die KDE-Plasma-Oberfläche mit vielem vertraut wurde. An diesem Punkt war ich neugierig und wollte mehr über die Welt des Linux-Desktops erfahren.</p>
-      <b>Warum sollte man Linux nutzen?</b>
-      <p>Um es von Anfang an klarzustellen: Linux ist kein Betriebssystem im herkömmlichen Sinne, wie man es von Windows kennt. Linux ist der Kernel, also der zentrale Bestandteil eines Betriebssystems, der die Prozess- und Datenorganisation steuert. Darauf aufbauend haben verschiedene Unternehmen, Gruppen oder Einzelpersonen komplette Betriebssysteme entwickelt – beispielsweise Ubuntu, Fedora, Arch, Debian, Mint, Nix usw. All diese Systeme funktionieren einwandfrei, sind größtenteils kostenlos und können direkt genutzt werden.</p>
-      <p>Linux ist Open Source, das heißt, der Quellcode ist für jeden einsehbar, jeder kann Änderungen vorschlagen und es gehört keiner einzelnen Firma. Die Privatsphäre wird gewahrt, da keine Telemetriedaten erhoben werden, was auch die Systemgeschwindigkeit positiv beeinflusst. Zudem läuft Linux problemlos auf alten Laptops und Rechnern, bei denen Windows bereits an seine Grenzen stößt. Updates werden so lange bereitgestellt, wie das Betriebssystem weiterentwickelt wird – und es gibt keine Einschränkungen, wenn bestimmte Hardwarevoraussetzungen nicht erfüllt sind. Linux-Betriebssysteme gelten zudem als von Haus aus sicherer (sofern gesunder Menschenverstand vorhanden ist) und bieten eine hohe Anpassbarkeit. Natürlich gibt es noch viele weitere Vorteile.</p>
-      <b>Welches Betriebssystem sollte ich nutzen?</b>
-      <p>Hier wird es für manche etwas komplizierter: Die Gründe für den Einsatz eines bestimmten Linux-Betriebssystems variieren je nachdem, welche Distribution man nutzt. Fedora gehört beispielsweise zu Red Hat und sammelt nach meinem Kenntnisstand minimale Telemetriedaten. Letztlich kommt es auf die individuellen Bedürfnisse an sowie darauf, welche Erfahrungen man bereits mit Linux-Betriebssystemen hat und wie tief man sich in das System einarbeiten möchte. Für Einsteiger eignet sich vermutlich Mint am besten, während Arch für Erfahrene gedacht ist, die sich intensiv mit dem Thema auseinandersetzen und viel Zeit in ihr Betriebssystem investieren möchten. Ich persönlich habe mich für Fedora entschieden – ein System, das weder zu schwer noch zu einfach ist. Fedora ist in zwei Desktopumgebungen verfügbar: GNOME und KDE Plasma. Beide unterscheiden sich deutlich: KDE orientiert sich optisch stärker an Windows und lässt sich leichter an individuelle Bedürfnisse anpassen, während GNOME das Gegenteil darstellt.</p>
-      <b>Warum Dual Boot?</b>
-      <p>– To be continued –</p>
+      <p class="translatable" data-de="Linux ist ein Begriff, unter dem ich bisher immer nur ein System für Programmierer verstanden habe. Doch änderte sich meine Meinung, als ich auf der Arbeit zum ersten Mal an einem Kubuntu-Gerät saß und durch die KDE-Plasma-Oberfläche mit vielem vertraut wurde. An diesem Punkt war ich neugierig und wollte mehr über die Welt des Linux-Desktops erfahren." data-en="Linux was a term I previously understood only as an operating system for programmers. However, my perspective changed when, at work, I first used a Kubuntu device and became familiar with many aspects of the KDE Plasma interface. That sparked my curiosity to learn more about the world of Linux desktops.">Linux ist ein Begriff, unter dem ich bisher immer nur ein System für Programmierer verstanden habe. Doch änderte sich meine Meinung, als ich auf der Arbeit zum ersten Mal an einem Kubuntu-Gerät saß und durch die KDE-Plasma-Oberfläche mit vielem vertraut wurde. An diesem Punkt war ich neugierig und wollte mehr über die Welt des Linux-Desktops erfahren.
+      </p>
+      <b class="translatable" data-de="Warum sollte man Linux nutzen?" data-en="Why Should You Use Linux?">Warum sollte man Linux nutzen?</b>
+      <p class="translatable" data-de="Um es von Anfang an klarzustellen: Linux ist kein Betriebssystem im herkömmlichen Sinne, wie man es von Windows kennt. Linux ist der Kernel, also der zentrale Bestandteil eines Betriebssystems, der die Prozess- und Datenorganisation steuert. Darauf aufbauend haben verschiedene Unternehmen, Gruppen oder Einzelpersonen komplette Betriebssysteme entwickelt – beispielsweise Ubuntu, Fedora, Arch, Debian, Mint, Nix usw. All diese Systeme funktionieren einwandfrei, sind größtenteils kostenlos und können direkt genutzt werden." data-en="To be clear from the start: Linux is not an operating system in the conventional sense like Windows. It is the kernel—the core component that manages processes and data organization. Building on this, various companies, groups, or individuals have developed complete operating systems (e.g., Ubuntu, Fedora, Arch, Debian, Mint, Nix, etc.) that work flawlessly, are mostly free, and ready to use.">Um es von Anfang an klarzustellen: Linux ist kein Betriebssystem im herkömmlichen Sinne, wie man es von Windows kennt. Linux ist der Kernel, also der zentrale Bestandteil eines Betriebssystems, der die Prozess- und Datenorganisation steuert. Darauf aufbauend haben verschiedene Unternehmen, Gruppen oder Einzelpersonen komplette Betriebssysteme entwickelt – beispielsweise Ubuntu, Fedora, Arch, Debian, Mint, Nix usw. All diese Systeme funktionieren einwandfrei, sind größtenteils kostenlos und können direkt genutzt werden.
+      </p>
+      <b class="translatable" data-de="Welches Betriebssystem sollte ich nutzen?" data-en="Which Operating System Should I Use?">Welches Betriebssystem sollte ich nutzen?</b>
+      <p class="translatable" data-de="Hier wird es für manche etwas komplizierter: Die Gründe für den Einsatz eines bestimmten Linux-Betriebssystems variieren je nachdem, welche Distribution man nutzt. Fedora gehört beispielsweise zu Red Hat und sammelt nach meinem Kenntnisstand minimale Telemetriedaten. Letztlich kommt es auf die individuellen Bedürfnisse an sowie darauf, welche Erfahrungen man bereits mit Linux-Betriebssystemen hat und wie tief man sich in das System einarbeiten möchte. Für Einsteiger eignet sich vermutlich Mint am besten, während Arch für Erfahrene gedacht ist, die sich intensiv mit dem Thema auseinandersetzen und viel Zeit in ihr Betriebssystem investieren möchten. Ich persönlich habe mich für Fedora entschieden – ein System, das weder zu schwer noch zu einfach ist. Fedora ist in zwei Desktopumgebungen verfügbar: GNOME und KDE Plasma. Beide unterscheiden sich deutlich: KDE orientiert sich optisch stärker an Windows und lässt sich leichter an individuelle Bedürfnisse anpassen, während GNOME das Gegenteil darstellt." data-en="This gets a bit more complicated: the reasons for choosing a particular Linux distribution vary depending on your needs and experience. For example, Fedora (associated with Red Hat) collects minimal telemetry data, to my knowledge. Ultimately, it depends on individual requirements and how deeply you want to engage with the system. Mint might be best for beginners, while Arch suits experienced users who want to dive deep into their OS. I personally chose Fedora—a system that is neither too heavy nor too simple. Fedora is available in two desktop environments: GNOME and KDE Plasma. KDE tends to resemble Windows more in appearance and is easier to customize, whereas GNOME is the opposite.">Hier wird es für manche etwas komplizierter: Die Gründe für den Einsatz eines bestimmten Linux-Betriebssystems variieren je nachdem, welche Distribution man nutzt. Fedora gehört beispielsweise zu Red Hat und sammelt nach meinem Kenntnisstand minimale Telemetriedaten. Letztlich kommt es auf die individuellen Bedürfnisse an sowie darauf, welche Erfahrungen man bereits mit Linux-Betriebssystemen hat und wie tief man sich in das System einarbeiten möchte. Für Einsteiger eignet sich vermutlich Mint am besten, während Arch für Erfahrene gedacht ist, die sich intensiv mit dem Thema auseinandersetzen und viel Zeit in ihr Betriebssystem investieren möchten. Ich persönlich habe mich für Fedora entschieden – ein System, das weder zu schwer noch zu einfach ist. Fedora ist in zwei Desktopumgebungen verfügbar: GNOME und KDE Plasma. Beide unterscheiden sich deutlich: KDE orientiert sich optisch stärker an Windows und lässt sich leichter an individuelle Bedürfnisse anpassen, während GNOME das Gegenteil darstellt.
+      </p>
+      <b class="translatable" data-de="Warum Dual Boot?" data-en="Why Dual Boot?">Warum Dual Boot?</b>
+      <p class="translatable" data-de="– To be continued –" data-en="– To be continued –">– To be continued –</p>
     </div>
   </div>
   
   <!-- Bootstrap JS Bundle (includes Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Language Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var currentLang = 'de'; // default language
+      const toggleButton = document.getElementById('langToggle');
+      
+      toggleButton.addEventListener('click', function(){
+        // Toggle language variable
+        currentLang = (currentLang === 'de') ? 'en' : 'de';
+        // Update toggle button text to show the alternate language
+        toggleButton.textContent = (currentLang === 'de') ? 'EN' : 'DE';
+        // Update all translatable elements
+        document.querySelectorAll('.translatable').forEach(function(elem){
+          var newText = elem.getAttribute('data-' + currentLang);
+          if(newText) {
+            elem.textContent = newText;
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
